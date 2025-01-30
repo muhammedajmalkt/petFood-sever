@@ -14,6 +14,7 @@ const cookieParser = require("cookie-parser")
 const app=express()
 app.use(express.json())
 // app.use(express.urlencoded({extended:true}))
+app.use(express.static(path.join(__dirname, "build")));
 const option={
     origin: "https://petfood-jzut.onrender.com",
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"], 
