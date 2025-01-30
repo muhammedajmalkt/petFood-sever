@@ -15,7 +15,7 @@ const app=express()
 app.use(express.json())
 // app.use(express.urlencoded({extended:true}))
 const option={
-    origin:"http://localhost:3000",
+    origin:"https://petfood-jzut.onrender.com",
     credentials:true
 }
 app.use(cookieParser())
