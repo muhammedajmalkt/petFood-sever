@@ -16,6 +16,7 @@ app.use(express.json())
 // app.use(express.urlencoded({extended:true}))
 const option={
     origin:"https://petfood-jzut.onrender.com",
+    method:["GET","POST","PUT","DELETE","PATCH"],
     credentials:true
 }
 app.use(cookieParser())
